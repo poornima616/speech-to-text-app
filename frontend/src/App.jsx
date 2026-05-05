@@ -59,7 +59,7 @@ function App() {
   const sendToBackend = async (formData) => {
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/transcribe",
+        "https://speech-to-text-app-f5jv.onrender.com",
         formData
       );
 
