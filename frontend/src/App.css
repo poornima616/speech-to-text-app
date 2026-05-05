@@ -1,0 +1,132 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #2A242B, #1E1A21);
+  color: #EDEDED;
+}
+
+/* APP LAYOUT */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* CENTER CONTENT */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* DROPDOWN */
+.select {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  color: #EDEDED;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* 👇 IMPORTANT: dropdown list style */
+.select option {
+  color: black;
+  background: #ffffff;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 25px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  color: #EDEDED;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* STOP BUTTON */
+.stop {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+/* FILE INPUT */
+.file {
+  color: #EDEDED;
+  background: transparent;
+  border: none;
+}
+
+/* TEXTAREA (FLOATING) */
+.textarea {
+  width: 500px;
+  height: 180px;
+  border-radius: 18px;
+  padding: 14px;
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #EDEDED;
+
+  resize: none;
+  outline: none;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* TEXTAREA FOCUS */
+.textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
