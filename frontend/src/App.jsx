@@ -56,22 +56,22 @@ function App() {
     sendToBackend(formData);
   };
 
-  const sendToBackend = async (formData) => {
-    try {
-      const res = await axios.post(
-        "https://speech-to-text-app-f5jv.onrender.com",
-        formData
-      );
+const sendToBackend = async (formData) => {
+  try {
+    const res = await axios.post(
+      "https://speech-to-text-app-f5jv.onrender.com/transcribe",
+      formData
+    );
 
-      if (res.data.success) {
-        setTranscript(res.data.transcript);
-      } else {
-        setTranscript(res.data.error);
-      }
-    } catch {
-      setTranscript("Backend error");
+    if (res.data.success) {
+      setTranscript(res.data.transcript);
+    } else {
+      setTranscript(res.data.error);
     }
-  };
+  } catch {
+    setTranscript("Backend error");
+  }
+};
 
   return (
     <div className="app">
